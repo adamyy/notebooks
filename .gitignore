@@ -1,1 +1,8 @@
+.cache
 .ipynb_checkpoints
+.ipython
+.jupyter
+.local
+
+uwaterloo/*/hidden
+volume
