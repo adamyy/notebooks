@@ -3,6 +3,11 @@ FROM ${BASE_CONTAINER}
 
 USER root
 
+RUN apt-get update \
+ && apt-get install -yq --no-install-recommends \
+    curl \
+ && apt-get clean && rm -rf /var/lib/apt/lists/*
+
 RUN conda install --quiet --yes -c conda-forge \
     'ipywidgets=7.4.2' \
     'beakerx=1.4.1' \

@@ -4,5 +4,7 @@
 .jupyter
 .local
 
+__pycache__
+
 uwaterloo/*/hidden
 volume
